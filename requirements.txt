@@ -1,0 +1,5 @@
+kagglehub
+tensorflow
+opencv-python
+numpy
+pyttsx3
