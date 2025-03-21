@@ -1,16 +1,38 @@
-A) Pasos para preparar ambiente.
-1. Crear un env (Ejecutar)
+# 📌 Configuración y Uso del Modelo
+
+## 🔧 A) Pasos para preparar el ambiente
+
+1. **Crear un entorno virtual**
+   ```bash
    python3 -m venv modelenv
-2. Activar el env
+   ```
+2. **Activar el entorno virtual**
+   ```bash
    source modelenv/bin/activate
+   ```
 
-B) Pasos para crear un modelo
-1. Ejecutar el train model file
+---
+
+## 🎯 B) Pasos para crear un modelo
+
+1. **Ejecutar el archivo de entrenamiento del modelo**
+   ```bash
    python trainmodel.py
-1.1 Si lanza un error es porque hay que agregar las librerías (Solo al ejecutar por primera vez)
+   ```
+2. **Si lanza un error por falta de librerías**, instalarlas con:
+   ```bash
+   pip install -r requirements.txt
+   ```
+   *(Solo es necesario la primera vez o si hay cambios en las dependencias).*
 
-C) Pasos para ejecutar un modelo existente
-1. Ejecutar el train model file (En la linea 42 del archivo loadmodel.py se define la ruta del modelo a ejecutar)
+---
+
+## 🚀 C) Pasos para ejecutar un modelo existente
+
+1. **Ejecutar el archivo de carga del modelo**
+   ```bash
    python loadmodel.py
+   ```
+2. 📌 **Nota importante:** La ruta del modelo a ejecutar se define en la línea **42** del archivo `loadmodel.py`.
 
-Nota: Para salir de la cámara se debe presionar 'q'.
+📸 **Para salir de la cámara, presiona `q`.**
