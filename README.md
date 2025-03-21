@@ -11,7 +11,7 @@
    source modelenv/bin/activate
    ```
 
-2.1. **Activar el entorno virtual (Windows)**
+2.2. **Activar el entorno virtual (Windows)**
    ```bash
    modelenv\Scripts\activate
    ```
