@@ -6,10 +6,16 @@
    ```bash
    python3 -m venv modelenv
    ```
-2. **Activar el entorno virtual**
+2.1. **Activar el entorno virtual (Mac)**
    ```bash
    source modelenv/bin/activate
    ```
+
+2.1. **Activar el entorno virtual (Windows)**
+   ```bash
+   modelenv\Scripts\activate
+   ```
+
 
 ---
 
