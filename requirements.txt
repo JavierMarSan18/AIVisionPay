@@ -3,3 +3,5 @@ tensorflow
 opencv-python
 numpy
 pyttsx3
+flask
+pillow

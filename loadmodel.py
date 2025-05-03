@@ -71,7 +71,7 @@ while True:
     cv2.imshow("Reconocimiento de herramientas", frame)
 
     # Text to speech with confidence > 85%
-    if predicted_label != last_prediction and confidence > 0.85:
+    if predicted_label != last_prediction and confidence > 0.90:
         phrase = f"{predicted_label}"
         engine.say(phrase)
         engine.runAndWait()
