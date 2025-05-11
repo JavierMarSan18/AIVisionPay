@@ -5,3 +5,6 @@ numpy
 pyttsx3
 flask
 pillow
+duckduckgo-search
+requests
+Pillow

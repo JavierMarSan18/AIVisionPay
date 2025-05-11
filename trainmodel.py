@@ -9,12 +9,14 @@ import numpy as np
 import os
 
 # Download dataset
-dataset_path = kagglehub.dataset_download("salmaneunus/mechanical-tools-dataset")
-print("Dataset downloaded in:", dataset_path)
+# dataset_path = kagglehub.dataset_download("salmaneunus/mechanical-tools-dataset")
+# print("Dataset downloaded in:", dataset_path)
+
+dataset_path = "../Training/v3"
 
 # Adjust correct paths
-train_path = os.path.join(dataset_path, "train_data_V2", "train_data_V2")  
-val_path = os.path.join(dataset_path, "validation_data_V2", "validation_data_V2")  
+train_path = os.path.join(dataset_path, "train_data")  
+val_path = os.path.join(dataset_path, "validation_data")  
 
 if not os.path.exists(train_path) or not os.path.exists(val_path):
     raise Exception(f"⚠️ The correct folders were not found. Verify that {train_path} and {val_path} exist.")
@@ -89,6 +91,6 @@ print("Training model with partial fine-tuning")
 model.fit(train_ds, validation_data=val_ds, epochs=50, callbacks=[early_stopping, reduce_lr])
 
 # Save model
-model_path = "iavisionpay_model.keras"
+model_path = "../model_version/iavisionpay_modelv4.keras"
 model.save(model_path)
 print(f"Model save in {model_path}")

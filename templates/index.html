@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IAVisionPay</title>
   <style>
     * {
@@ -101,13 +102,14 @@
     }
   </style>
 </head>
+
 <body>
   <h2>Reconocimiento de objetos</h2>
   <video id="video" autoplay playsinline></video>
 
   <div class="slider-container">
     <div class="volume-label">Volumen de voz: <span id="volumeValue">100</span>%</div>
-    <input type="range" min="0" max="100" value="100" id="volumeSlider">
+    <input type="range" min="0" max="100" value="100" id="volumeSlider" />
   </div>
 
   <button id="startBtn" onclick="startCapture()">Iniciar captura automática</button>
@@ -123,21 +125,30 @@
     const startBtn = document.getElementById('startBtn');
     const stopBtn = document.getElementById('stopBtn');
 
-    let intervalId = null;
     let voiceVolume = 1.0;
+    let capturing = false;
+    let availableVoices = [];
 
-    navigator.mediaDevices.getUserMedia({ video: true }).then(stream => {
-      video.srcObject = stream;
-    }).catch(err => {
-      resultado.textContent = "Error al acceder a la cámara: " + err.message;
-    });
+    speechSynthesis.onvoiceschanged = () => {
+      availableVoices = speechSynthesis.getVoices();
+    };
 
     volumeSlider.addEventListener('input', () => {
       voiceVolume = volumeSlider.value / 100;
       volumeValue.textContent = volumeSlider.value;
     });
 
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(stream => {
+        video.srcObject = stream;
+      })
+      .catch(err => {
+        resultado.textContent = "❌ Error al acceder a la cámara: " + err.message;
+      });
+
     async function capture() {
+      if (!capturing) return;
+
       const canvas = document.createElement("canvas");
       canvas.width = 224;
       canvas.height = 224;
@@ -155,36 +166,61 @@
         });
 
         const result = await response.json();
-        if (result.label) {
+
+        if (result.label && result.confidence >= 0.9) {
           resultado.textContent = `${result.label} (${(result.confidence * 100).toFixed(1)}%)`;
+
           const msg = new SpeechSynthesisUtterance(result.label);
           msg.volume = voiceVolume;
+          msg.pitch = 1.1;
+          msg.rate = 0.95;
+          msg.lang = result.language === "es" ? "es-ES"
+            : result.language === "pt" ? "pt-BR"
+              : "en-US";
+
+          const preferredVoice = availableVoices.find(v => v.lang === msg.lang);
+          if (preferredVoice) {
+            msg.voice = preferredVoice;
+          }
+
+          msg.onend = () => {
+            if (capturing) setTimeout(capture, 500);
+          };
+
+          speechSynthesis.cancel();
           speechSynthesis.speak(msg);
+        } else if (result.label) {
+          resultado.textContent = `🤔 Pensando...`;
+          setTimeout(capture, 1000);
         } else {
-          resultado.textContent = "Error: " + JSON.stringify(result);
+          resultado.textContent = "⚠️ Error: " + JSON.stringify(result);
+          setTimeout(capture, 1500);
         }
+
+
       } catch (err) {
-        resultado.textContent = "Error al enviar la imagen: " + err;
+        resultado.textContent = "❌ Error al enviar la imagen: " + err;
+        setTimeout(capture, 1500);
       }
     }
 
     function startCapture() {
-      if (!intervalId) {
-        intervalId = setInterval(capture, 5000);
+      if (!capturing) {
+        capturing = true;
         startBtn.style.display = "none";
         stopBtn.style.display = "inline-block";
+        capture();
       }
     }
 
     function stopCapture() {
-      if (intervalId) {
-        clearInterval(intervalId);
-        intervalId = null;
-        startBtn.style.display = "inline-block";
-        stopBtn.style.display = "none";
-        resultado.textContent = "Captura detenida";
-      }
+      capturing = false;
+      speechSynthesis.cancel();
+      startBtn.style.display = "inline-block";
+      stopBtn.style.display = "none";
+      resultado.textContent = "Captura detenida";
     }
   </script>
 </body>
+
 </html>
