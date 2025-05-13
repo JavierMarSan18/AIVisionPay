@@ -1,13 +1,18 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Script para generar un reporte de cantidad de imágenes por clase
-en train y validation, y clasificar debilidad/fortaleza según umbrales.
-"""
-
 import os
 import json
 import argparse
+
+def load_json(file_path):
+    with open(file_path, 'r', encoding='utf-8') as f:
+        return json.load(f)
+    
+def save_json(data, file_path):
+    with open(file_path, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+def create_folder(folder):
+    if not os.path.exists(folder):
+        os.makedirs(folder)
 
 def count_images(folder):
     if not os.path.isdir(folder):
@@ -47,8 +52,7 @@ def main():
     train_base = os.path.join(args.dataset_path, 'train_data')
     val_base   = os.path.join(args.dataset_path, 'validation_data')
 
-    with open(args.targets, 'r', encoding='utf-8') as f:
-        targets = json.load(f)
+    targets = load_json(args.targets)
 
     report = []
     for entry in targets:
@@ -71,11 +75,9 @@ def main():
             'validation_status': val_status,
         })
 
-    # Guardar reporte
-    with open(args.output, 'w', encoding='utf-8') as f:
-        json.dump(report, f, indent=2, ensure_ascii=False)
+    create_folder(os.path.dirname(args.output))
+    save_json(report, args.output)
 
-    # Mostrar resumen
     print(f"📊 Dataset report saved to {args.output}")
     for r in report:
         print(f"{r['class']}: train={r['train_count']} ({r['train_status']}), "
