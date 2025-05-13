@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reportes de Dataset</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='reporter_styles.css') }}">
+</head>
+<body>
+  <h1>Reportes de Dataset</h1>
+  <div id="report-container">
+    <ul id="version-list"></ul>
+    <ul id="report-list"></ul>
+    <div id="report-details"></div>
+  </div>
+  <script src="{{ url_for('static', filename='reporter_script.js') }}"></script>
+</body>
+</html>
