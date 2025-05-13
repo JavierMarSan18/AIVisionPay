@@ -1,15 +1,12 @@
 :root {
   --primary-color: #4361ee;
   --secondary-color: #3a0ca3;
-  --accent-color: #4895ef;
-  --success-color: #4cc9f0;
   --danger-color: #f72585;
-  --warning-color: #f8961e;
   --light-color: #f8f9fa;
   --dark-color: #212529;
   --gray-color: #6c757d;
   --border-radius: 12px;
-  --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   --transition: all 0.3s ease;
 }
 
@@ -20,60 +17,44 @@
 }
 
 body {
-  font-family: 'Segoe UI', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f5f7fa;
   color: var(--dark-color);
-  line-height: 1.6;
-  min-height: 100vh;
-  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 
 .app-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  height: 100vh;
+  max-height: 100vh;
   padding: 2vh 3vw;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+  gap: 1.5vh;
 }
 
 .app-header {
   text-align: center;
-  margin-bottom: 2vh;
-  padding: 1vh 0;
+  padding: 0.5vh 0;
 }
 
 .app-title {
   color: var(--primary-color);
-  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
   font-weight: 700;
-  margin-bottom: 0.5vh;
 }
 
 .app-subtitle {
   color: var(--gray-color);
-  font-size: clamp(0.9rem, 2vw, 1rem);
-}
-
-.app-content {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  gap: 2vh;
-}
-
-.video-wrapper {
-  width: 100%;
-  aspect-ratio: 16/9;
-  max-height: 70vh;
-  margin: 0 auto;
+  font-size: clamp(0.8rem, 2.5vw, 0.9rem);
 }
 
 .video-container {
   position: relative;
   width: 100%;
   height: 100%;
+  min-height: 0; /* Permite que se reduzca */
   border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: var(--box-shadow);
@@ -81,7 +62,6 @@ body {
 }
 
 video {
-  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -97,75 +77,62 @@ video {
 }
 
 .controls-panel {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5vh;
+  padding: 1.5vh 2vw;
   background-color: white;
-  padding: 2vh 3vw;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
 }
 
 .volume-control {
-  margin-bottom: 1.5vh;
+  display: grid;
+  gap: 0.5vh;
 }
 
 .control-label {
-  display: block;
-  margin-bottom: 1vh;
-  font-weight: 500;
-  color: var(--dark-color);
   display: flex;
   align-items: center;
   gap: 0.5vw;
-  font-size: clamp(0.9rem, 2vw, 1rem);
-}
-
-.icon {
-  font-size: 1em;
+  font-size: clamp(0.8rem, 3vw, 0.9rem);
+  color: var(--dark-color);
 }
 
 .custom-slider {
-  -webkit-appearance: none;
   width: 100%;
-  height: 8px;
-  border-radius: 4px;
+  height: 6px;
+  -webkit-appearance: none;
   background: #e9ecef;
-  outline: none;
+  border-radius: 3px;
 }
 
 .custom-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  appearance: none;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   background: var(--primary-color);
   cursor: pointer;
-  transition: var(--transition);
-}
-
-.custom-slider::-webkit-slider-thumb:hover {
-  transform: scale(1.1);
-  background: var(--secondary-color);
 }
 
 .button-group {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1.5vw;
 }
 
 .btn {
-  flex: 1;
   padding: 1.5vh 2vw;
   border: none;
   border-radius: var(--border-radius);
-  font-size: clamp(0.9rem, 2vw, 1rem);
-  font-weight: 500;
+  font-size: clamp(0.8rem, 3vw, 0.9rem);
   cursor: pointer;
-  transition: var(--transition);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5vw;
-  min-height: 44px; /* Tamaño mínimo para touch */
+  transition: var(--transition);
 }
 
 .btn-primary {
@@ -175,7 +142,6 @@ video {
 
 .btn-primary:hover {
   background-color: var(--secondary-color);
-  transform: translateY(-2px);
 }
 
 .btn-danger {
@@ -183,95 +149,91 @@ video {
   color: white;
 }
 
-.btn-danger:hover {
-  background-color: #d11a6b;
-  transform: translateY(-2px);
-}
-
 .result-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  min-height: 15vh;
-}
-
-.result-card {
   background-color: white;
   border-radius: var(--border-radius);
-  padding: 2vh 3vw;
+  padding: 1.5vh 2vw;
   box-shadow: var(--box-shadow);
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 1;
   text-align: center;
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  min-height: 0; /* Permite que se reduzca */
 }
 
 .result-placeholder {
+  display: grid;
+  gap: 0.5vh;
   color: var(--gray-color);
 }
 
-.result-placeholder .icon {
-  font-size: 1.5em;
-  margin-bottom: 1vh;
-}
-
 /* Estados dinámicos */
-#resultado.thinking {
+.result-active {
+  background-color: #e6f7ff;
+}
+
+.result-thinking {
   background-color: #fff3e0;
-  border-left: 4px solid var(--warning-color);
 }
 
-#resultado.error {
+.result-error {
   background-color: #ffebee;
-  border-left: 4px solid var(--danger-color);
 }
 
-#resultado.success {
+.result-success {
   background-color: #e8f5e9;
-  border-left: 4px solid #4caf50;
 }
 
-/* Media Queries específicas */
-@media (max-width: 768px) {
+/* Media Queries para ajustes específicos */
+@media (orientation: portrait) and (max-height: 700px) {
   .app-container {
-    padding: 2vh 4vw;
+    grid-template-rows: auto 50vh auto auto;
+    padding: 1vh 3vw;
+    gap: 1vh;
   }
   
+  .controls-panel {
+    padding: 1vh 2vw;
+  }
+}
+
+@media (orientation: landscape) {
+  .app-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+      "header header"
+      "video result"
+      "controls controls";
+  }
+  
+  .app-header {
+    grid-area: header;
+  }
+  
+  .video-container {
+    grid-area: video;
+    margin-right: 1vw;
+  }
+  
+  .result-container {
+    grid-area: result;
+    margin-left: 1vw;
+  }
+  
+  .controls-panel {
+    grid-area: controls;
+  }
+}
+
+@media (max-width: 500px) {
   .button-group {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 1vh;
   }
   
   .btn {
     padding: 1.5vh 4vw;
-    width: 100%;
-  }
-}
-
-@media (max-height: 600px) {
-  .video-wrapper {
-    max-height: 60vh;
-  }
-  
-  .app-header {
-    margin-bottom: 1vh;
-    padding: 0.5vh 0;
-  }
-}
-
-@media (orientation: portrait) and (max-width: 500px) {
-  .video-wrapper {
-    aspect-ratio: 4/5;
-  }
-  
-  .controls-panel {
-    padding: 1.5vh 4vw;
-  }
-  
-  .result-card {
-    padding: 1.5vh 4vw;
-    min-height: 10vh;
   }
 }

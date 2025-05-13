@@ -1,60 +1,38 @@
-// Mismo código JavaScript anterior, pero con ajuste para el overlay de video
-
 const video = document.getElementById('video');
 const resultado = document.getElementById('resultado');
 const volumeSlider = document.getElementById('volumeSlider');
 const volumeValue = document.getElementById('volumeValue');
 const startBtn = document.getElementById('startBtn');
 const stopBtn = document.getElementById('stopBtn');
-const videoOverlay = document.getElementById('videoOverlay');
 
 let voiceVolume = 1.0;
 let capturing = false;
 let availableVoices = [];
 
-// Ajustar tamaño del overlay cuando cambia el video
-function resizeOverlay() {
-  if (video.videoWidth && video.videoHeight) {
-    const videoRatio = video.videoWidth / video.videoHeight;
-    const containerRatio = video.clientWidth / video.clientHeight;
-    
-    if (containerRatio > videoRatio) {
-      // Contenedor más ancho que el video
-      const scale = video.clientWidth / video.videoWidth;
-      videoOverlay.style.transform = `scale(${scale})`;
-    } else {
-      // Contenedor más alto que el video
-      const scale = video.clientHeight / video.videoHeight;
-      videoOverlay.style.transform = `scale(${scale})`;
-    }
-  }
-}
+// Configuración inicial
+function initApp() {
+  // Cargar voces disponibles
+  speechSynthesis.onvoiceschanged = () => {
+    availableVoices = speechSynthesis.getVoices();
+  };
 
-// Observar cambios de tamaño del video
-const resizeObserver = new ResizeObserver(resizeOverlay);
-resizeObserver.observe(video);
-
-speechSynthesis.onvoiceschanged = () => {
-  availableVoices = speechSynthesis.getVoices();
-};
-
-volumeSlider.addEventListener('input', () => {
-  voiceVolume = volumeSlider.value / 100;
-  volumeValue.textContent = volumeSlider.value;
-});
-
-navigator.mediaDevices.getUserMedia({ video: true })
-  .then(stream => {
-    video.srcObject = stream;
-    video.onloadedmetadata = () => {
-      resizeOverlay();
-    };
-  })
-  .catch(err => {
-    showError("Error al acceder a la cámara: " + err.message);
+  // Control de volumen
+  volumeSlider.addEventListener('input', () => {
+    voiceVolume = volumeSlider.value / 100;
+    volumeValue.textContent = volumeSlider.value;
   });
 
-// Resto del código JavaScript permanece igual...
+  // Iniciar cámara
+  navigator.mediaDevices.getUserMedia({ video: true })
+    .then(stream => {
+      video.srcObject = stream;
+    })
+    .catch(err => {
+      showResult("error", "Error al acceder a la cámara: " + err.message);
+    });
+}
+
+// Función de captura y reconocimiento
 async function capture() {
   if (!capturing) return;
 
@@ -64,71 +42,60 @@ async function capture() {
   const ctx = canvas.getContext("2d");
   ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
 
-  const dataURL = canvas.toDataURL("image/jpeg");
-  const base64Image = dataURL.split(',')[1];
-
   try {
-    updateResultState("thinking", "🤔 Analizando imagen...");
+    showResult("thinking", "Analizando...");
     
     const response = await fetch("/predict", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ image: base64Image })
+      body: JSON.stringify({ image: canvas.toDataURL("image/jpeg").split(',')[1] })
     });
 
     const result = await response.json();
 
     if (result.label && result.confidence >= 0.9) {
-      const confidencePercent = (result.confidence * 100).toFixed(1);
-      updateResultState("success", `${result.label} (${confidencePercent}% confianza)`);
-      
-      const msg = new SpeechSynthesisUtterance(result.label);
-      msg.volume = voiceVolume;
-      msg.pitch = 1.1;
-      msg.rate = 0.95;
-      msg.lang = result.language === "es" ? "es-ES"
-        : result.language === "pt" ? "pt-BR"
-        : "en-US";
-
-      const preferredVoice = availableVoices.find(v => v.lang === msg.lang);
-      if (preferredVoice) msg.voice = preferredVoice;
-
-      msg.onend = () => { 
-        if (capturing) setTimeout(capture, 500); 
-      };
-
-      speechSynthesis.cancel();
-      speechSynthesis.speak(msg);
-      
+      showResult("success", `${result.label} (${(result.confidence * 100).toFixed(1)}%)`);
+      speakResult(result.label, result.language);
     } else if (result.label) {
-      updateResultState("thinking", "🤔 No estoy seguro...");
+      showResult("thinking", "No estoy seguro...");
       setTimeout(capture, 1000);
     } else {
-      updateResultState("error", "⚠️ No se pudo reconocer el objeto");
+      showResult("error", "No se reconoció el objeto");
       setTimeout(capture, 1500);
     }
   } catch (err) {
-    updateResultState("error", "❌ Error: " + err.message);
+    showResult("error", "Error: " + err.message);
     setTimeout(capture, 1500);
   }
 }
 
-function updateResultState(state, message) {
+// Función para hablar el resultado
+function speakResult(text, lang) {
+  const msg = new SpeechSynthesisUtterance(text);
+  msg.volume = voiceVolume;
+  msg.lang = lang === "es" ? "es-ES" : lang === "pt" ? "pt-BR" : "en-US";
+  
+  const voice = availableVoices.find(v => v.lang === msg.lang);
+  if (voice) msg.voice = voice;
+
+  msg.onend = () => capturing && setTimeout(capture, 500);
+  speechSynthesis.speak(msg);
+}
+
+// Mostrar resultado
+function showResult(type, message) {
   resultado.innerHTML = message;
-  resultado.className = "result-card";
-  resultado.classList.add(state);
+  resultado.className = "result-container";
+  resultado.classList.add("result-" + type);
 }
 
-function showError(message) {
-  updateResultState("error", "❌ " + message);
-}
-
+// Control de captura
 function startCapture() {
   if (!capturing) {
     capturing = true;
     startBtn.style.display = "none";
     stopBtn.style.display = "flex";
-    updateResultState("active", "🔍 Iniciando reconocimiento...");
+    showResult("active", "Iniciando...");
     capture();
   }
 }
@@ -138,10 +105,14 @@ function stopCapture() {
   speechSynthesis.cancel();
   startBtn.style.display = "flex";
   stopBtn.style.display = "none";
-  updateResultState("", `
+  resultado.innerHTML = `
     <div class="result-placeholder">
       <span class="icon">⏸️</span>
       <p>Captura detenida</p>
     </div>
-  `);
+  `;
+  resultado.className = "result-container";
 }
+
+// Iniciar aplicación
+document.addEventListener('DOMContentLoaded', initApp);

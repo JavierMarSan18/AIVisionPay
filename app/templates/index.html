@@ -8,46 +8,40 @@
 </head>
 <body>
   <div class="app-container">
-    <!-- <header class="app-header">
+    <header class="app-header">
       <h1 class="app-title">IAVisionPay</h1>
-      <p class="app-subtitle">Reconocimiento de objetos en tiempo real</p>
-    </header> -->
+      <p class="app-subtitle">Reconocimiento de objetos</p>
+    </header>
 
-    <main class="app-content">
-      <div class="video-wrapper">
-        <div class="video-container">
-          <video id="video" autoplay playsinline></video>
-          <div class="video-overlay" id="videoOverlay"></div>
-        </div>
+    <div class="video-container">
+      <video id="video" autoplay playsinline></video>
+      <div class="video-overlay" id="videoOverlay"></div>
+    </div>
+
+    <div class="controls-panel">
+      <div class="volume-control">
+        <label for="volumeSlider" class="control-label">
+          <span class="icon">🔊</span> Volumen: <span id="volumeValue">100</span>%
+        </label>
+        <input type="range" min="0" max="100" value="100" id="volumeSlider" class="custom-slider">
       </div>
 
-      <div class="controls-panel">
-        <div class="volume-control">
-          <label for="volumeSlider" class="control-label">
-            <span class="icon">🔊</span> Volumen: <span id="volumeValue">100</span>%
-          </label>
-          <input type="range" min="0" max="100" value="100" id="volumeSlider" class="custom-slider">
-        </div>
-
-        <div class="button-group">
-          <button id="startBtn" class="btn btn-primary" onclick="startCapture()">
-            <span class="icon">▶️</span> Iniciar
-          </button>
-          <button id="stopBtn" class="btn btn-danger" onclick="stopCapture()" style="display: none;">
-            <span class="icon">⏹️</span> Detener
-          </button>
-        </div>
+      <div class="button-group">
+        <button id="startBtn" class="btn btn-primary" onclick="startCapture()">
+          <span class="icon">▶️</span> Iniciar
+        </button>
+        <button id="stopBtn" class="btn btn-danger" onclick="stopCapture()" style="display: none;">
+          <span class="icon">⏹️</span> Detener
+        </button>
       </div>
+    </div>
 
-      <div class="result-container">
-        <div class="result-card" id="resultado">
-          <div class="result-placeholder">
-            <span class="icon">👁️</span>
-            <p>Presiona "Iniciar" para comenzar</p>
-          </div>
-        </div>
+    <div class="result-container" id="resultado">
+      <div class="result-placeholder">
+        <span class="icon">👁️</span>
+        <p>Presiona "Iniciar" para comenzar</p>
       </div>
-    </main>
+    </div>
   </div>
 
   <script src="{{ url_for('static', filename='script.js') }}"></script>
