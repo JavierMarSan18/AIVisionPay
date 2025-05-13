@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IAVisionPay</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h2>Reconocimiento de objetos</h2>
+  <video id="video" autoplay playsinline></video>
+
+  <div class="slider-container">
+    <div class="volume-label">Volumen de voz: <span id="volumeValue">100</span>%</div>
+    <input type="range" min="0" max="100" value="100" id="volumeSlider" />
+  </div>
+
+  <button id="startBtn" onclick="startCapture()">Iniciar captura automática</button>
+  <button id="stopBtn" class="stop" onclick="stopCapture()" style="display: none;">Detener captura</button>
+
+  <p id="resultado"></p>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

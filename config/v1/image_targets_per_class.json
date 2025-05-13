@@ -1,0 +1,461 @@
+[
+  {
+    "class_name": "Celular",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Reloj de mano",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Gafas",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Audífonos",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Cartera",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Llaves",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Bolso",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Mochila",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Libro",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Revista",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Control remoto",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Teléfono fijo",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Tablet",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Laptop",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Sofá",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Silla",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Mesa de centro",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Mesa lateral",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Televisor",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Reproductor DVD",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Consola de videojuegos",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Alfombra",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Cojín",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Ventilador",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Lámpara de pie",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Lámpara de mesa",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Cuadro decorativo",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Planta en maceta",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Cenicero",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Portarretratos",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Revistero",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Reloj de pared",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Persianas",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Cortinas",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Control de aire acondicionado",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Caja de pañuelos",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Encendedor",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Vela",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Portavasos",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Botella de agua",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Taza",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Termo",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Control de luces",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Router",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Cargador de celular",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Cable USB",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Cuaderno",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Bolígrafo",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Lápiz",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Marcador",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  },
+  {
+    "class_name": "Tijeras",
+    "targets": {
+      "minimal_test": 100,
+      "baseline_model": 300,
+      "high_accuracy": 500,
+      "maximum_accuracy": 1000
+    }
+  }
+]

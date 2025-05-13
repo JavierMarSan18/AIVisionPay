@@ -1,0 +1,616 @@
+[
+    {
+        "class": {
+            "name": "Celular",
+            "terms_to_seek": [
+                "celular",
+                "teléfono móvil",
+                "smartphone",
+                "mobile phone",
+                "téléphone portable"
+            ],
+
+            "translations": {
+                "es": "Celular",
+                "en": "Smartphone",
+                "pt": "Celular"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Reloj de mano",
+            "terms_to_seek": [
+                "reloj de mano",
+                "wrist watch",
+                "watch",
+                "montre",
+                "relógio de pulso"
+            ],
+
+            "translations": {
+                "es": "Reloj de mano",
+                "en": "Wristwatch",
+                "pt": "Relógio de pulso"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Gafas",
+            "terms_to_seek": [
+                "gafas",
+                "lentes",
+                "anteojos",
+                "glasses",
+                "lunettes",
+                "óculos"
+            ],
+
+            "translations": {
+                "es": "Gafas",
+                "en": "Glasses",
+                "pt": "Óculos"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Audífonos",
+            "terms_to_seek": [
+                "audífonos",
+                "auriculares",
+                "headphones",
+                "écouteurs",
+                "fone de ouvido"
+            ],
+
+            "translations": {
+                "es": "Audífonos",
+                "en": "Headphones",
+                "pt": "Fones de ouvido"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Cartera",
+            "terms_to_seek": [
+                "cartera",
+                "billetera",
+                "wallet",
+                "portefeuille"
+            ],
+
+            "translations": {
+                "es": "Cartera",
+                "en": "Wallet",
+                "pt": "Carteira"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Llaves",
+            "terms_to_seek": [
+                "llaves",
+                "keys",
+                "clés",
+                "chaves"
+            ],
+
+            "translations": {
+                "es": "Llaves",
+                "en": "Keys",
+                "pt": "Chaves"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Bolso",
+            "terms_to_seek": [
+                "bolso",
+                "bag",
+                "sac",
+                "bolsa"
+            ],
+
+            "translations": {
+                "es": "Bolso",
+                "en": "Bag",
+                "pt": "Bolsa"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Mochila",
+            "terms_to_seek": [
+                "mochila",
+                "backpack",
+                "sac à dos",
+                "mochila escolar"
+            ],
+
+            "translations": {
+                "es": "Mochila",
+                "en": "Backpack",
+                "pt": "Mochila"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Libro",
+            "terms_to_seek": ["libro", "book", "livre", "livro"],
+            "translations": {
+                "es": "Libro",
+                "en": "Book",
+                "pt": "Livro"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Revista",
+            "terms_to_seek": ["revista", "magazine", "revue", "revista"],
+            "translations": {
+                "es": "Revista",
+                "en": "Magazine",
+                "pt": "Revista"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Control remoto",
+            "terms_to_seek": ["control remoto", "remote control", "commande à distance", "controle remoto"],
+            "translations": {
+                "es": "Control remoto",
+                "en": "Remote control",
+                "pt": "Controle remoto"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Teléfono fijo",
+            "terms_to_seek": ["teléfono fijo", "landline", "téléphone fixe"],
+            "translations": {
+                "es": "Teléfono fijo",
+                "en": "Landline",
+                "pt": "Telefone fixo"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Tablet",
+            "terms_to_seek": ["tablet", "tableta", "tablet PC", "tablette"],
+            "translations": {
+                "es": "Tablet",
+                "en": "Tablet",
+                "pt": "Tablet"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Laptop",
+            "terms_to_seek": ["laptop", "portátil", "notebook", "ordinateur portable"],
+            "translations": {
+                "es": "Laptop",
+                "en": "Laptop",
+                "pt": "Notebook"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Sofá",
+            "terms_to_seek": ["sofá", "sofa", "couch", "canapé"],
+            "translations": {
+                "es": "Sofá",
+                "en": "Sofa",
+                "pt": "Sofá"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Silla",
+            "terms_to_seek": ["silla", "chair", "chaise", "cadeira"],
+            "translations": {
+                "es": "Silla",
+                "en": "Chair",
+                "pt": "Cadeira"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Mesa de centro",
+            "terms_to_seek": ["mesa de centro", "coffee table", "table basse", "mesa de sala"],
+            "translations": {
+                "es": "Mesa de centro",
+                "en": "Coffee table",
+                "pt": "Mesa de centro"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Mesa lateral",
+            "terms_to_seek": ["mesa lateral", "side table", "table d'appoint", "mesa auxiliar"],
+            "translations": {
+                "es": "Mesa lateral",
+                "en": "Side table",
+                "pt": "Mesa lateral"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Televisor",
+            "terms_to_seek": ["televisor", "TV", "televisión", "television", "téléviseur"],
+            "translations": {
+                "es": "Televisor",
+                "en": "TV",
+                "pt": "TV"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Reproductor DVD",
+            "terms_to_seek": ["reproductor DVD", "DVD player", "lecteur DVD"],
+            "translations": {
+                "es": "Reproductor DVD",
+                "en": "DVD player",
+                "pt": "DVD player"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Consola de videojuegos",
+            "terms_to_seek": ["consola de videojuegos", "video game console", "console de jeux vidéo"],
+            "translations": {
+                "es": "Consola de videojuegos",
+                "en": "Game console",
+                "pt": "Console de videogame"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Alfombra",
+            "terms_to_seek": ["alfombra", "carpet", "rug", "tapis"],
+            "translations": {
+                "es": "Alfombra",
+                "en": "Carpet",
+                "pt": "Tapete"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Cojín",
+            "terms_to_seek": ["cojín", "pillow", "cushion", "coussin"],
+            "translations": {
+                "es": "Cojín",
+                "en": "Pillow",
+                "pt": "Almofada"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Ventilador",
+            "terms_to_seek": ["ventilador", "fan", "ventilateur"],
+            "translations": {
+                "es": "Ventilador",
+                "en": "Fan",
+                "pt": "Ventilador"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Lámpara de pie",
+            "terms_to_seek": ["lámpara de pie", "floor lamp", "lampe sur pied"],
+            "translations": {
+                "es": "Lámpara de pie",
+                "en": "Floor lamp",
+                "pt": "Abajur de chão"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Lámpara de mesa",
+            "terms_to_seek": ["lámpara de mesa", "table lamp", "lampe de table"],
+            "translations": {
+                "es": "Lámpara de mesa",
+                "en": "Table lamp",
+                "pt": "Abajur de mesa"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Cuadro decorativo",
+            "terms_to_seek": ["cuadro", "painting", "artwork", "tableau décoratif"],
+            "translations": {
+                "es": "Cuadro decorativo",
+                "en": "Decorative painting",
+                "pt": "Quadro decorativo"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Planta en maceta",
+            "terms_to_seek": ["planta en maceta", "potted plant", "plante en pot"],
+            "translations": {
+                "es": "Planta en maceta",
+                "en": "Potted plant",
+                "pt": "Planta em vaso"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Cenicero",
+            "terms_to_seek": ["cenicero", "ashtray", "cendrier"],
+            "translations": {
+                "es": "Cenicero",
+                "en": "Ashtray",
+                "pt": "Cinzeiro"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Portarretratos",
+            "terms_to_seek": ["portarretratos", "picture frame", "cadre photo"],
+            "translations": {
+                "es": "Portarretratos",
+                "en": "Picture frame",
+                "pt": "Porta-retrato"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Revistero",
+            "terms_to_seek": ["revistero", "magazine rack", "porte-revues"],
+            "translations": {
+                "es": "Revistero",
+                "en": "Magazine rack",
+                "pt": "Revistero"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Reloj de pared",
+            "terms_to_seek": ["reloj de pared", "wall clock", "horloge murale"],
+            "translations": {
+                "es": "Reloj de pared",
+                "en": "Wall clock",
+                "pt": "Relógio de parede"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Persianas",
+            "terms_to_seek": ["persianas", "blinds", "stores"],
+            "translations": {
+                "es": "Persianas",
+                "en": "Blinds",
+                "pt": "Persianas"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Cortinas",
+            "terms_to_seek": ["cortinas", "curtains", "rideaux"],
+            "translations": {
+                "es": "Cortinas",
+                "en": "Curtains",
+                "pt": "Cortinas"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Control de aire acondicionado",
+            "terms_to_seek": ["control de aire acondicionado", "AC remote", "télécommande de climatiseur"],
+            "translations": {
+                "es": "Control de aire acondicionado",
+                "en": "AC remote control",
+                "pt": "Controle de ar condicionado"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Caja de pañuelos",
+            "terms_to_seek": ["caja de pañuelos", "tissue box", "boîte à mouchoirs"],
+            "translations": {
+                "es": "Caja de pañuelos",
+                "en": "Tissue box",
+                "pt": "Caixa de lenços"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Encendedor",
+            "terms_to_seek": ["encendedor", "lighter", "briquet"],
+            "translations": {
+                "es": "Encendedor",
+                "en": "Lighter",
+                "pt": "Isqueiro"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Vela",
+            "terms_to_seek": ["vela", "candle", "bougie"],
+            "translations": {
+                "es": "Vela",
+                "en": "Candle",
+                "pt": "Vela"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Portavasos",
+            "terms_to_seek": ["portavasos", "coaster", "dessous de verre"],
+            "translations": {
+                "es": "Portavasos",
+                "en": "Coaster",
+                "pt": "Descanso de copos"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Botella de agua",
+            "terms_to_seek": ["botella de agua", "water bottle", "bouteille d'eau"],
+            "translations": {
+                "es": "Botella de agua",
+                "en": "Water bottle",
+                "pt": "Garrafa de água"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Taza",
+            "terms_to_seek": ["taza", "mug", "cup", "tasse"],
+            "translations": {
+                "es": "Taza",
+                "en": "Mug",
+                "pt": "Caneca"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Termo",
+            "terms_to_seek": ["termo", "thermos", "bouteille isotherme"],
+            "translations": {
+                "es": "Termo",
+                "en": "Thermos",
+                "pt": "Garrafa térmica"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Control de luces",
+            "terms_to_seek": ["control de luces", "light switch", "interrupteur"],
+            "translations": {
+                "es": "Control de luces",
+                "en": "Light switch",
+                "pt": "Interruptor de luz"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Router",
+            "terms_to_seek": ["router", "enrutador", "modem", "routeur"],
+            "translations": {
+                "es": "Router",
+                "en": "Router",
+                "pt": "Roteador"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Cargador de celular",
+            "terms_to_seek": ["cargador de celular", "phone charger", "chargeur de téléphone"],
+            "translations": {
+                "es": "Cargador de celular",
+                "en": "Phone charger",
+                "pt": "Carregador de celular"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Cable USB",
+            "terms_to_seek": ["cable USB", "USB cable", "câble USB"],
+            "translations": {
+                "es": "Cable USB",
+                "en": "USB cable",
+                "pt": "Cabo USB"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Cuaderno",
+            "terms_to_seek": ["cuaderno", "notebook", "cahier"],
+            "translations": {
+                "es": "Cuaderno",
+                "en": "Notebook",
+                "pt": "Caderno"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Bolígrafo",
+            "terms_to_seek": ["bolígrafo", "pen", "stylo"],
+            "translations": {
+                "es": "Bolígrafo",
+                "en": "Pen",
+                "pt": "Caneta"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Lápiz",
+            "terms_to_seek": ["lápiz", "pencil", "crayon"],
+            "translations": {
+                "es": "Lápiz",
+                "en": "Pencil",
+                "pt": "Lápis"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Marcador",
+            "terms_to_seek": ["marcador", "marker", "feutre"],
+            "translations": {
+                "es": "Marcador",
+                "en": "Marker",
+                "pt": "Marcador"
+            }
+        }
+    },
+    {
+        "class": {
+            "name": "Tijeras",
+            "terms_to_seek": ["tijeras", "scissors", "ciseaux"],
+            "translations": {
+                "es": "Tijeras",
+                "en": "Scissors",
+                "pt": "Tesouras"
+            }
+        }
+    }
+]

@@ -1,3 +1,4 @@
+import argparse
 from flask import Flask, request, jsonify, render_template
 import tensorflow as tf
 import numpy as np
@@ -5,6 +6,21 @@ import base64
 import io
 from PIL import Image
 import json
+import os
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--config", required=True, help="Path to config JSON")
+args = parser.parse_args()
+
+# Load config
+with open(args.config, "r", encoding="utf-8") as f:
+    api_config = json.load(f)
+
+model_path = api_config["model_path"]
+classes_path = api_config["classes_path"]
+img_size = tuple(api_config["image_size"])
+default_lang = api_config["default_language"]
 
 def load_classes_from_json(path):
     with open(path, "r", encoding="utf-8") as f:
@@ -12,27 +28,22 @@ def load_classes_from_json(path):
 
 app = Flask(__name__)
 
-model = tf.keras.models.load_model("../model_version/iavisionpay_modelv4.keras")
-# class_names = ["hammer", "screwdriver", "wrench"]
-clases = load_classes_from_json("../Training/v3/classes_test.json")
-# Store both name and translations for easier access
+model = tf.keras.models.load_model(model_path)
+clases = load_classes_from_json(classes_path)
 class_translations = [c["class"]["translations"] for c in clases]
-default_class_names = [c["class"]["name"] for c in clases]  # useful for fallback
-
-img_size = (224, 224)
+default_class_names = [c["class"]["name"] for c in clases]
 
 @app.route("/")
 def index():
     return render_template("index.html")
 
 @app.route("/predict", methods=["POST"])
-@app.route("/predict", methods=["POST"])
 def predict():
     data = request.get_json()
     if "image" not in data:
         return jsonify({"error": "Missing image"}), 400
 
-    lang = data.get("lang", "es")  # default to Spanish
+    lang = data.get("lang", default_lang)
 
     image_data = base64.b64decode(data["image"])
     image = Image.open(io.BytesIO(image_data)).resize(img_size)
@@ -43,7 +54,6 @@ def predict():
     predicted_index = np.argmax(predictions[0])
     confidence = float(predictions[0][predicted_index])
 
-    # Get label in the requested language
     translations = class_translations[predicted_index]
     predicted_label = translations.get(lang, default_class_names[predicted_index])
 

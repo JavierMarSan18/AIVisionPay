@@ -1,0 +1,33 @@
+{
+    "output_base_path": "data/Training",
+    "version": "v1",
+    "mode": "train",
+    "limits": {
+        "image_limit_per_term": 250,
+        "max_image_limit_per_class": 1250,
+        "min_image_limit_per_class": 1250
+    },
+    "min_resolution": [
+        50,
+        50
+    ],
+    "max_file_size_mb": 5,
+    "allowed_formats": [
+        "jpeg",
+        "jpg",
+        "png",
+        "webp"
+    ],
+    "sleep_between_queries": 0.5,
+    "retry_on_rate_limit": {
+        "enabled": true,
+        "max_retries": 3,
+        "wait_seconds": 5
+    },
+    "use_trusted_domains": false,
+    "trusted_domains_path": "config/v1/trusted_domains.txt",
+    "classes_path": "config/v1/class_labels.json",
+    "overwrite_existing": false,
+    "log_successful_downloads": true,
+    "log_errors": true
+}

@@ -1,0 +1,359 @@
+[
+  {
+    "class": "Celular",
+    "train_count": 1518,
+    "train_status": "Excellent",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Reloj de mano",
+    "train_count": 1250,
+    "train_status": "Excellent",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Gafas",
+    "train_count": 1250,
+    "train_status": "Excellent",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Audífonos",
+    "train_count": 1250,
+    "train_status": "Excellent",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Cartera",
+    "train_count": 1250,
+    "train_status": "Excellent",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Llaves",
+    "train_count": 1250,
+    "train_status": "Excellent",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Bolso",
+    "train_count": 1250,
+    "train_status": "Excellent",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Mochila",
+    "train_count": 1250,
+    "train_status": "Excellent",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Libro",
+    "train_count": 1250,
+    "train_status": "Excellent",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Revista",
+    "train_count": 657,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Control remoto",
+    "train_count": 1000,
+    "train_status": "Excellent",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Teléfono fijo",
+    "train_count": 590,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Tablet",
+    "train_count": 790,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Laptop",
+    "train_count": 1000,
+    "train_status": "Excellent",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Sofá",
+    "train_count": 1000,
+    "train_status": "Excellent",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Silla",
+    "train_count": 1000,
+    "train_status": "Excellent",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Mesa de centro",
+    "train_count": 1000,
+    "train_status": "Excellent",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Mesa lateral",
+    "train_count": 1000,
+    "train_status": "Excellent",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Televisor",
+    "train_count": 1250,
+    "train_status": "Excellent",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Reproductor DVD",
+    "train_count": 557,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Consola de videojuegos",
+    "train_count": 0,
+    "train_status": "Weak",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Alfombra",
+    "train_count": 1000,
+    "train_status": "Excellent",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Cojín",
+    "train_count": 0,
+    "train_status": "Weak",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Ventilador",
+    "train_count": 750,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Lámpara de pie",
+    "train_count": 750,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Lámpara de mesa",
+    "train_count": 750,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Cuadro decorativo",
+    "train_count": 818,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Planta en maceta",
+    "train_count": 750,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Cenicero",
+    "train_count": 638,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Portarretratos",
+    "train_count": 750,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Revistero",
+    "train_count": 0,
+    "train_status": "Weak",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Reloj de pared",
+    "train_count": 0,
+    "train_status": "Weak",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Persianas",
+    "train_count": 750,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Cortinas",
+    "train_count": 750,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Control de aire acondicionado",
+    "train_count": 600,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Caja de pañuelos",
+    "train_count": 750,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Encendedor",
+    "train_count": 616,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Vela",
+    "train_count": 750,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Portavasos",
+    "train_count": 750,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Botella de agua",
+    "train_count": 0,
+    "train_status": "Weak",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Taza",
+    "train_count": 1000,
+    "train_status": "Excellent",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Termo",
+    "train_count": 750,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Control de luces",
+    "train_count": 606,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Router",
+    "train_count": 782,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Cargador de celular",
+    "train_count": 750,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Cable USB",
+    "train_count": 750,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Cuaderno",
+    "train_count": 750,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Bolígrafo",
+    "train_count": 615,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Lápiz",
+    "train_count": 750,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Marcador",
+    "train_count": 750,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  },
+  {
+    "class": "Tijeras",
+    "train_count": 750,
+    "train_status": "Strong",
+    "validation_count": 0,
+    "validation_status": "Weak"
+  }
+]

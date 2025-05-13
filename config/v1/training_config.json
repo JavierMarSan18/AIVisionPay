@@ -1,0 +1,54 @@
+{
+    "model": "iavision",
+    "version": "v1",
+    "description": "Complete training config for iavision v1 using MobileNetV2 and fine-tuning",
+    "paths": {
+        "dataset": "data/Training/v1",
+        "train_data": "train_data",
+        "validation_data": "validation_data",
+        "model_output": "models/iavisionpay_modelv1.keras"
+    },
+    "image_settings": {
+        "input_size": [
+            224,
+            224
+        ],
+        "color_mode": "rgb"
+    },
+    "training_parameters": {
+        "batch_size": 32,
+        "learning_rate": 0.0001,
+        "num_epochs": 50,
+        "optimizer": "adam",
+        "loss_function": "sparse_categorical_crossentropy",
+        "augmentation_pipeline": [
+            "RandomFlip(horizontal)",
+            "RandomRotation(0.3)",
+            "RandomZoom(0.3)",
+            "RandomBrightness(0.3)",
+            "RandomContrast(0.3)",
+            "RandomTranslation(0.2, 0.2)",
+            "RandomWidth(0.2)",
+            "RandomHeight(0.2)"
+        ],
+        "fine_tuning": {
+            "base_model": "MobileNetV2",
+            "pretrained": true,
+            "trainable_layers": "last 53 of 153",
+            "frozen_layers": 100
+        },
+        "callbacks": {
+            "early_stopping": {
+                "monitor": "val_loss",
+                "patience": 10,
+                "restore_best_weights": true
+            },
+            "reduce_lr_on_plateau": {
+                "monitor": "val_loss",
+                "factor": 0.5,
+                "patience": 5,
+                "min_lr": 1e-06
+            }
+        }
+    }
+}

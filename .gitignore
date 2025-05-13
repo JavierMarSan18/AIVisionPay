@@ -1,3 +1,5 @@
 *.keras
 /modelenv
 .DS_Store
+/data
+/models
