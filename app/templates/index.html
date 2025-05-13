@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IAVisionPay</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IAVisionPay - Reconocimiento de objetos</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-  <h2>Reconocimiento de objetos</h2>
-  <video id="video" autoplay playsinline></video>
+  <div class="app-container">
+    <!-- <header class="app-header">
+      <h1 class="app-title">IAVisionPay</h1>
+      <p class="app-subtitle">Reconocimiento de objetos en tiempo real</p>
+    </header> -->
 
-  <div class="slider-container">
-    <div class="volume-label">Volumen de voz: <span id="volumeValue">100</span>%</div>
-    <input type="range" min="0" max="100" value="100" id="volumeSlider" />
+    <main class="app-content">
+      <div class="video-wrapper">
+        <div class="video-container">
+          <video id="video" autoplay playsinline></video>
+          <div class="video-overlay" id="videoOverlay"></div>
+        </div>
+      </div>
+
+      <div class="controls-panel">
+        <div class="volume-control">
+          <label for="volumeSlider" class="control-label">
+            <span class="icon">🔊</span> Volumen: <span id="volumeValue">100</span>%
+          </label>
+          <input type="range" min="0" max="100" value="100" id="volumeSlider" class="custom-slider">
+        </div>
+
+        <div class="button-group">
+          <button id="startBtn" class="btn btn-primary" onclick="startCapture()">
+            <span class="icon">▶️</span> Iniciar
+          </button>
+          <button id="stopBtn" class="btn btn-danger" onclick="stopCapture()" style="display: none;">
+            <span class="icon">⏹️</span> Detener
+          </button>
+        </div>
+      </div>
+
+      <div class="result-container">
+        <div class="result-card" id="resultado">
+          <div class="result-placeholder">
+            <span class="icon">👁️</span>
+            <p>Presiona "Iniciar" para comenzar</p>
+          </div>
+        </div>
+      </div>
+    </main>
   </div>
-
-  <button id="startBtn" onclick="startCapture()">Iniciar captura automática</button>
-  <button id="stopBtn" class="stop" onclick="stopCapture()" style="display: none;">Detener captura</button>
-
-  <p id="resultado"></p>
 
   <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
