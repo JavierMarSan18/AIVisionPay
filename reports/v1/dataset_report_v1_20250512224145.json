@@ -64,35 +64,35 @@
   },
   {
     "class": "Revista",
-    "train_count": 657,
-    "train_status": "Strong",
+    "train_count": 1250,
+    "train_status": "Excellent",
     "validation_count": 0,
     "validation_status": "Weak"
   },
   {
     "class": "Control remoto",
-    "train_count": 1000,
+    "train_count": 1250,
     "train_status": "Excellent",
     "validation_count": 0,
     "validation_status": "Weak"
   },
   {
     "class": "Teléfono fijo",
-    "train_count": 590,
-    "train_status": "Strong",
+    "train_count": 1058,
+    "train_status": "Excellent",
     "validation_count": 0,
     "validation_status": "Weak"
   },
   {
     "class": "Tablet",
-    "train_count": 790,
-    "train_status": "Strong",
+    "train_count": 1012,
+    "train_status": "Excellent",
     "validation_count": 0,
     "validation_status": "Weak"
   },
   {
     "class": "Laptop",
-    "train_count": 1000,
+    "train_count": 1250,
     "train_status": "Excellent",
     "validation_count": 0,
     "validation_status": "Weak"
@@ -106,7 +106,7 @@
   },
   {
     "class": "Silla",
-    "train_count": 1000,
+    "train_count": 1250,
     "train_status": "Excellent",
     "validation_count": 0,
     "validation_status": "Weak"
@@ -120,7 +120,7 @@
   },
   {
     "class": "Mesa lateral",
-    "train_count": 1000,
+    "train_count": 1078,
     "train_status": "Excellent",
     "validation_count": 0,
     "validation_status": "Weak"
@@ -134,7 +134,7 @@
   },
   {
     "class": "Reproductor DVD",
-    "train_count": 557,
+    "train_count": 616,
     "train_status": "Strong",
     "validation_count": 0,
     "validation_status": "Weak"
