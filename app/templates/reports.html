@@ -1,17 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Reportes de Dataset</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reportes de Dataset - Visualizador</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='reporter_styles.css') }}">
 </head>
 <body>
-  <h1>Reportes de Dataset</h1>
-  <div id="report-container">
-    <ul id="version-list"></ul>
-    <ul id="report-list"></ul>
-    <div id="report-details"></div>
-  </div>
+
+  <header>
+    <div class="container">
+      <h1>Reportes de Dataset</h1>
+      <p class="subtitle">Visualiza y analiza los reportes de calidad de datos</p>
+    </div>
+  </header>
+  
+  <main class="container">
+    <div class="panel">
+      <h2 class="panel-title">Versiones disponibles</h2>
+      <div id="version-list" class="button-group"></div>
+    </div>
+    
+    <div class="panel">
+      <h2 class="panel-title">Archivos de reporte</h2>
+      <div id="report-list" class="button-group"></div>
+    </div>
+    
+    <div class="panel">
+      <div class="panel-header">
+        <h2 class="panel-title">Detalles del reporte</h2>
+        <div class="filters">
+          <div class="search-box">
+            <input type="text" id="search-class" placeholder="Buscar clase..." class="search-input">
+            <button id="clear-search" class="clear-btn">×</button>
+          </div>
+          <select id="status-filter" class="filter-select">
+            <option value="all">Todos los estados</option>
+            <option value="OK">Solo OK</option>
+            <option value="WARNING">Solo WARNING</option>
+            <option value="ERROR">Solo ERROR</option>
+          </select>
+          <select id="size-filter" class="filter-select">
+            <option value="all">Todos los tamaños</option>
+            <option value="small">Pequeño (< 500)</option>
+            <option value="medium">Mediano (500-2000)</option>
+            <option value="large">Grande (> 2000)</option>
+          </select>
+          <select id="sort-by" class="filter-select">
+            <option value="name-asc">Ordenar por nombre (A-Z)</option>
+            <option value="name-desc">Ordenar por nombre (Z-A)</option>
+            <option value="count-asc">Ordenar por tamaño (↑)</option>
+            <option value="count-desc">Ordenar por tamaño (↓)</option>
+          </select>
+        </div>
+      </div>
+      <div id="summary-stats" class="summary-stats"></div>
+      <div id="report-details">
+        <div class="empty-state">
+          <div>📊</div>
+          <p>Selecciona una versión y luego un archivo de reporte para ver los detalles</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
   <script src="{{ url_for('static', filename='reporter_script.js') }}"></script>
 </body>
 </html>
