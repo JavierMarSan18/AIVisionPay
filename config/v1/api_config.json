@@ -1,6 +1,6 @@
 {
   "model_path": "models/iavisionpay_model.keras",
-  "classes_path": "config/class_labels.json",
+  "classes_path": "config/v1/class_labels.json",
   "image_size": [224, 224],
   "default_language": "es"
 }
