@@ -1,7 +1,7 @@
 from flask import Flask, send_from_directory
 from .routes.index_route import init_index_route
 from .routes.predict_route import init_predict_route
-from .routes.reports_route import init_reports_route  # ← asegúrate que este exista
+from .routes.reports_route import init_reports_route
 
 def create_app(config):
     app = Flask(__name__)
