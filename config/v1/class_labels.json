@@ -6,7 +6,13 @@
         "gorra",
         "cap",
         "baseball cap",
-        "hat"
+        "hat",
+        "visor",
+        "snapback",
+        "beanie",
+        "gorro",
+        "capucho",
+        "gorra de béisbol"
       ],
       "translations": {
         "es": "Gorra",
@@ -21,7 +27,14 @@
       "terms_to_seek": [
         "gafas de sol",
         "sunglasses",
-        "lentes de sol"
+        "lentes de sol",
+        "shades",
+        "sun glasses",
+        "gafas UV",
+        "óculos escuros",
+        "gafas de sol polarizadas",
+        "lentes polarizadas",
+        "sun shades"
       ],
       "translations": {
         "es": "Gafas de sol",
@@ -36,7 +49,14 @@
       "terms_to_seek": [
         "reloj",
         "watch",
-        "wristwatch"
+        "wristwatch",
+        "timepiece",
+        "analog watch",
+        "digital watch",
+        "chronometer",
+        "horloge",
+        "reloj de pulsera",
+        "wrist clock"
       ],
       "translations": {
         "es": "Reloj",
@@ -51,7 +71,14 @@
       "terms_to_seek": [
         "cinturon",
         "belt",
-        "leather belt"
+        "leather belt",
+        "waist belt",
+        "sash",
+        "belt strap",
+        "cinturón de cuero",
+        "cinturón de tela",
+        "cinturón ajustable",
+        "belt buckle"
       ],
       "translations": {
         "es": "Cinturón",
@@ -67,7 +94,13 @@
         "celular",
         "smartphone",
         "mobile phone",
-        "teléfono móvil"
+        "teléfono móvil",
+        "cell phone",
+        "phone",
+        "android phone",
+        "iPhone",
+        "móvil",
+        "portable phone"
       ],
       "translations": {
         "es": "Celular",
@@ -82,7 +115,14 @@
       "terms_to_seek": [
         "audífonos inalámbricos",
         "wireless headphones",
-        "earbuds"
+        "earbuds",
+        "Bluetooth earphones",
+        "wireless earbuds",
+        "wireless earphones",
+        "in-ear headphones",
+        "cascos inalámbricos",
+        "headset inalámbrico",
+        "wire-free headphones"
       ],
       "translations": {
         "es": "Audífonos inalámbricos",
@@ -97,7 +137,14 @@
       "terms_to_seek": [
         "audífonos con cable",
         "wired headphones",
-        "headphones"
+        "headphones",
+        "cable earphones",
+        "earphones",
+        "cable headphone",
+        "cable headset",
+        "audífonos cableados",
+        "wired earphones",
+        "audífonos con cable metálico"
       ],
       "translations": {
         "es": "Audífonos con cable",
@@ -112,7 +159,14 @@
       "terms_to_seek": [
         "cargador portátil",
         "power bank",
-        "portable charger"
+        "portable charger",
+        "battery pack",
+        "external battery",
+        "charger",
+        "mobile charger",
+        "portable power bank",
+        "juice pack",
+        "usb power bank"
       ],
       "translations": {
         "es": "Cargador portátil",
@@ -126,7 +180,15 @@
       "name": "smartwatch",
       "terms_to_seek": [
         "smartwatch",
-        "reloj inteligente"
+        "reloj inteligente",
+        "digital watch",
+        "wearable watch",
+        "fitness tracker",
+        "smart wristwatch",
+        "smart watch",
+        "reloj digital",
+        "Apple Watch",
+        "Android watch"
       ],
       "translations": {
         "es": "Smartwatch",
@@ -141,7 +203,14 @@
       "terms_to_seek": [
         "tablet",
         "tablet device",
-        "iPad"
+        "iPad",
+        "tablet pc",
+        "tablet computer",
+        "android tablet",
+        "touchscreen tablet",
+        "electronic tablet",
+        "tablet móvil",
+        "tablet con pantalla táctil"
       ],
       "translations": {
         "es": "Tablet",
@@ -156,7 +225,14 @@
       "terms_to_seek": [
         "laptop",
         "notebook",
-        "computadora portátil"
+        "computadora portátil",
+        "ultrabook",
+        "laptop computer",
+        "notebook pc",
+        "portable computer",
+        "MacBook",
+        "netbook",
+        "gaming laptop"
       ],
       "translations": {
         "es": "Laptop",
@@ -171,7 +247,14 @@
       "terms_to_seek": [
         "billetera",
         "wallet",
-        "cartera"
+        "cartera",
+        "billfold",
+        "wallet purse",
+        "billetero",
+        "card holder",
+        "coin wallet",
+        "money holder",
+        "leather wallet"
       ],
       "translations": {
         "es": "Billetera",
@@ -186,7 +269,14 @@
       "terms_to_seek": [
         "monedero",
         "coin purse",
-        "change purse"
+        "change purse",
+        "coin pouch",
+        "purse",
+        "pocket purse",
+        "monedero de monedas",
+        "porte-monnaie",
+        "porta moedas",
+        "small wallet"
       ],
       "translations": {
         "es": "Monedero",

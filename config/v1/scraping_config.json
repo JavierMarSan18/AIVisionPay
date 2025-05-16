@@ -17,11 +17,11 @@
         "png",
         "webp"
     ],
-    "sleep_between_queries": 10,
+    "sleep_between_queries": 3,
     "retry_on_rate_limit": {
         "enabled": true,
-        "max_retries": 7,
-        "wait_seconds": 10
+        "max_retries": 3,
+        "wait_seconds": 5
     },
     "use_trusted_domains": false,
     "trusted_domains_path": "config/v1/trusted_domains.txt",
