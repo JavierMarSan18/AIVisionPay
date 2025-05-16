@@ -8,3 +8,4 @@ pillow
 duckduckgo-search
 requests
 Pillow
+duckduckgo_search
