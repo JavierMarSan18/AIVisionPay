@@ -1,7 +1,7 @@
 {
     "output_base_path": "data/Training",
     "version": "v1",
-    "mode": "validation",
+    "mode": "train",
     "limits": {
         "max_image_limit_per_class": 500,
         "min_image_limit_per_class": 500
