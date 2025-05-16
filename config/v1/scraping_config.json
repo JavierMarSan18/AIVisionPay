@@ -3,7 +3,6 @@
     "version": "v1",
     "mode": "train",
     "limits": {
-        "image_limit_per_term": 250,
         "max_image_limit_per_class": 2000,
         "min_image_limit_per_class": 2000
     },
@@ -18,7 +17,7 @@
         "png",
         "webp"
     ],
-    "sleep_between_queries": 0.5,
+    "sleep_between_queries": 3,
     "retry_on_rate_limit": {
         "enabled": true,
         "max_retries": 3,
@@ -29,5 +28,6 @@
     "classes_path": "config/v1/class_labels.json",
     "overwrite_existing": false,
     "log_successful_downloads": true,
-    "log_errors": true
+    "log_errors": true,
+    "proxies": {}
 }
