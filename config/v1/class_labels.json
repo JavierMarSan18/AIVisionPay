@@ -1,18 +1,103 @@
 [
   {
     "class": {
+      "name": "gorra",
+      "terms_to_seek": [
+        "gorra",
+        "cap",
+        "baseball cap",
+        "hat"
+      ],
+      "translations": {
+        "es": "Gorra",
+        "en": "Cap",
+        "pt": "Boné"
+      }
+    }
+  },
+  {
+    "class": {
+      "name": "gafas_de_sol",
+      "terms_to_seek": [
+        "gafas de sol",
+        "sunglasses",
+        "lentes de sol"
+      ],
+      "translations": {
+        "es": "Gafas de sol",
+        "en": "Sunglasses",
+        "pt": "Óculos de sol"
+      }
+    }
+  },
+  {
+    "class": {
+      "name": "reloj",
+      "terms_to_seek": [
+        "reloj",
+        "watch",
+        "wristwatch"
+      ],
+      "translations": {
+        "es": "Reloj",
+        "en": "Watch",
+        "pt": "Relógio"
+      }
+    }
+  },
+  {
+    "class": {
+      "name": "cinturon",
+      "terms_to_seek": [
+        "cinturon",
+        "belt",
+        "leather belt"
+      ],
+      "translations": {
+        "es": "Cinturón",
+        "en": "Belt",
+        "pt": "Cinto"
+      }
+    }
+  },
+  {
+    "class": {
+      "name": "celular",
+      "terms_to_seek": [
+        "celular",
+        "smartphone",
+        "mobile phone",
+        "teléfono móvil"
+      ],
+      "translations": {
+        "es": "Celular",
+        "en": "Smartphone",
+        "pt": "Celular"
+      }
+    }
+  },
+  {
+    "class": {
+      "name": "audifonos_inalambricos",
+      "terms_to_seek": [
+        "audífonos inalámbricos",
+        "wireless headphones",
+        "earbuds"
+      ],
+      "translations": {
+        "es": "Audífonos inalámbricos",
+        "en": "Wireless headphones",
+        "pt": "Fones sem fio"
+      }
+    }
+  },
+  {
+    "class": {
       "name": "audifonos_con_cable",
       "terms_to_seek": [
         "audífonos con cable",
         "wired headphones",
-        "headphones",
-        "earphones",
-        "earbuds with cable",
-        "cable earphones",
-        "cable headphones",
-        "auriculares con cable",
-        "headset with cable",
-        "cable headset"
+        "headphones"
       ],
       "translations": {
         "es": "Audífonos con cable",
@@ -27,14 +112,7 @@
       "terms_to_seek": [
         "cargador portátil",
         "power bank",
-        "portable charger",
-        "battery bank",
-        "mobile power bank",
-        "external battery",
-        "portable power",
-        "batería externa",
-        "powerbank",
-        "juice pack"
+        "portable charger"
       ],
       "translations": {
         "es": "Cargador portátil",
@@ -48,15 +126,7 @@
       "name": "smartwatch",
       "terms_to_seek": [
         "smartwatch",
-        "reloj inteligente",
-        "digital watch",
-        "wearable watch",
-        "fitness tracker",
-        "smart wristwatch",
-        "smart watch",
-        "reloj digital",
-        "android watch",
-        "apple watch"
+        "reloj inteligente"
       ],
       "translations": {
         "es": "Smartwatch",
@@ -71,14 +141,7 @@
       "terms_to_seek": [
         "tablet",
         "tablet device",
-        "iPad",
-        "tablet pc",
-        "tablet computer",
-        "android tablet",
-        "electronic tablet",
-        "tablet con pantalla táctil",
-        "tablet touchscreen",
-        "tablet móvil"
+        "iPad"
       ],
       "translations": {
         "es": "Tablet",
@@ -93,14 +156,7 @@
       "terms_to_seek": [
         "laptop",
         "notebook",
-        "computadora portátil",
-        "portable computer",
-        "laptop computer",
-        "ultrabook",
-        "notebook pc",
-        "laptop pc",
-        "ordenador portátil",
-        "macbook"
+        "computadora portátil"
       ],
       "translations": {
         "es": "Laptop",
@@ -115,14 +171,7 @@
       "terms_to_seek": [
         "billetera",
         "wallet",
-        "cartera",
-        "billfold",
-        "wallet purse",
-        "billetero",
-        "carteira",
-        "pocket wallet",
-        "money holder",
-        "leather wallet"
+        "cartera"
       ],
       "translations": {
         "es": "Billetera",
@@ -137,14 +186,7 @@
       "terms_to_seek": [
         "monedero",
         "coin purse",
-        "change purse",
-        "coin pouch",
-        "purse for coins",
-        "monederos",
-        "porte-monnaie",
-        "porta moedas",
-        "small wallet",
-        "bolsillo monedero"
+        "change purse"
       ],
       "translations": {
         "es": "Monedero",
