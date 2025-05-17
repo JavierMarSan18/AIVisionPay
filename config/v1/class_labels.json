@@ -1,45 +1,23 @@
 [
   {
     "class": {
-      "name": "gorra",
+      "name": "audifonos_inalambricos",
       "terms_to_seek": [
-        "gorra",
-        "cap",
-        "baseball cap",
-        "hat",
-        "visor",
-        "snapback",
-        "beanie",
-        "gorro",
-        "capucho",
-        "gorra de béisbol"
+        "audífonos inalámbricos",
+        "wireless headphones",
+        "earbuds",
+        "Bluetooth earphones",
+        "wireless earbuds",
+        "wireless earphones",
+        "in-ear headphones",
+        "cascos inalámbricos",
+        "headset inalámbrico",
+        "wire-free headphones"
       ],
       "translations": {
-        "es": "Gorra",
-        "en": "Cap",
-        "pt": "Boné"
-      }
-    }
-  },
-  {
-    "class": {
-      "name": "gafas_de_sol",
-      "terms_to_seek": [
-        "gafas de sol",
-        "sunglasses",
-        "lentes de sol",
-        "shades",
-        "sun glasses",
-        "gafas UV",
-        "óculos escuros",
-        "gafas de sol polarizadas",
-        "lentes polarizadas",
-        "sun shades"
-      ],
-      "translations": {
-        "es": "Gafas de sol",
-        "en": "Sunglasses",
-        "pt": "Óculos de sol"
+        "es": "Audífonos inalámbricos",
+        "en": "Wireless headphones",
+        "pt": "Fones sem fio"
       }
     }
   },
@@ -67,23 +45,45 @@
   },
   {
     "class": {
-      "name": "cinturon",
+      "name": "laptop",
       "terms_to_seek": [
-        "cinturon",
-        "belt",
-        "leather belt",
-        "waist belt",
-        "sash",
-        "belt strap",
-        "cinturón de cuero",
-        "cinturón de tela",
-        "cinturón ajustable",
-        "belt buckle"
+        "laptop",
+        "notebook",
+        "computadora portátil",
+        "ultrabook",
+        "laptop computer",
+        "notebook pc",
+        "portable computer",
+        "MacBook",
+        "netbook",
+        "gaming laptop"
       ],
       "translations": {
-        "es": "Cinturón",
-        "en": "Belt",
-        "pt": "Cinto"
+        "es": "Laptop",
+        "en": "Laptop",
+        "pt": "Notebook"
+      }
+    }
+  },
+    {
+    "class": {
+      "name": "gorra",
+      "terms_to_seek": [
+        "gorra",
+        "cap",
+        "baseball cap",
+        "hat",
+        "visor",
+        "snapback",
+        "beanie",
+        "gorro",
+        "capucho",
+        "gorra de béisbol"
+      ],
+      "translations": {
+        "es": "Gorra",
+        "en": "Cap",
+        "pt": "Boné"
       }
     }
   },
@@ -109,73 +109,7 @@
       }
     }
   },
-  {
-    "class": {
-      "name": "audifonos_inalambricos",
-      "terms_to_seek": [
-        "audífonos inalámbricos",
-        "wireless headphones",
-        "earbuds",
-        "Bluetooth earphones",
-        "wireless earbuds",
-        "wireless earphones",
-        "in-ear headphones",
-        "cascos inalámbricos",
-        "headset inalámbrico",
-        "wire-free headphones"
-      ],
-      "translations": {
-        "es": "Audífonos inalámbricos",
-        "en": "Wireless headphones",
-        "pt": "Fones sem fio"
-      }
-    }
-  },
-  {
-    "class": {
-      "name": "audifonos_con_cable",
-      "terms_to_seek": [
-        "audífonos con cable",
-        "wired headphones",
-        "headphones",
-        "cable earphones",
-        "earphones",
-        "cable headphone",
-        "cable headset",
-        "audífonos cableados",
-        "wired earphones",
-        "audífonos con cable metálico"
-      ],
-      "translations": {
-        "es": "Audífonos con cable",
-        "en": "Wired headphones",
-        "pt": "Fones com fio"
-      }
-    }
-  },
-  {
-    "class": {
-      "name": "cargador_portatil",
-      "terms_to_seek": [
-        "cargador portátil",
-        "power bank",
-        "portable charger",
-        "battery pack",
-        "external battery",
-        "charger",
-        "mobile charger",
-        "portable power bank",
-        "juice pack",
-        "usb power bank"
-      ],
-      "translations": {
-        "es": "Cargador portátil",
-        "en": "Power bank",
-        "pt": "Carregador portátil"
-      }
-    }
-  },
-  {
+    {
     "class": {
       "name": "smartwatch",
       "terms_to_seek": [
@@ -199,50 +133,6 @@
   },
   {
     "class": {
-      "name": "tablet",
-      "terms_to_seek": [
-        "tablet",
-        "tablet device",
-        "iPad",
-        "tablet pc",
-        "tablet computer",
-        "android tablet",
-        "touchscreen tablet",
-        "electronic tablet",
-        "tablet móvil",
-        "tablet con pantalla táctil"
-      ],
-      "translations": {
-        "es": "Tablet",
-        "en": "Tablet",
-        "pt": "Tablet"
-      }
-    }
-  },
-  {
-    "class": {
-      "name": "laptop",
-      "terms_to_seek": [
-        "laptop",
-        "notebook",
-        "computadora portátil",
-        "ultrabook",
-        "laptop computer",
-        "notebook pc",
-        "portable computer",
-        "MacBook",
-        "netbook",
-        "gaming laptop"
-      ],
-      "translations": {
-        "es": "Laptop",
-        "en": "Laptop",
-        "pt": "Notebook"
-      }
-    }
-  },
-  {
-    "class": {
       "name": "billetera",
       "terms_to_seek": [
         "billetera",
@@ -260,28 +150,6 @@
         "es": "Billetera",
         "en": "Wallet",
         "pt": "Carteira"
-      }
-    }
-  },
-  {
-    "class": {
-      "name": "monedero",
-      "terms_to_seek": [
-        "monedero",
-        "coin purse",
-        "change purse",
-        "coin pouch",
-        "purse",
-        "pocket purse",
-        "monedero de monedas",
-        "porte-monnaie",
-        "porta moedas",
-        "small wallet"
-      ],
-      "translations": {
-        "es": "Monedero",
-        "en": "Coin purse",
-        "pt": "Porta-moedas"
       }
     }
   }

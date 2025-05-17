@@ -16,7 +16,11 @@ def create_app(config):
     with open(config["classes_path"], "r", encoding="utf-8") as f:
         classes = json.load(f)
     class_translations = [c["class"]["translations"] for c in classes]
+    class_translations = class_translations[::-1]
     default_class_names = [c["class"]["name"] for c in classes]
+    default_class_names = default_class_names[::-1]
+
+    print(default_class_names)
 
     # Registro de rutas
     init_index_route(app)

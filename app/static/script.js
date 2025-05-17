@@ -53,7 +53,7 @@ async function capture() {
 
     const result = await response.json();
 
-    if (result.label && result.confidence >= 0.9) {
+    if (result.label && result.confidence >= 0.82) {
       showResult("success", `${result.label} (${(result.confidence * 100).toFixed(1)}%)`);
       speakResult(result.label, result.language);
     } else if (result.label) {
